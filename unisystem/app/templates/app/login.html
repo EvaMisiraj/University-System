@@ -1,0 +1,27 @@
+{% extends 'app/Links.html' %}
+{% load static%}
+{% block content %}
+<style>
+    body{
+        background-image: url("{% static 'photos/attendance.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container{
+        opacity: 95%;
+        margin-left: 700px;
+        margin-top: 170px;
+        width: initial;
+    }
+</style>
+
+<div class="container jumbotron">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p><input type="text" name="username" placeholder="Username..."></p>
+        <p><input type="password" name="password" placeholder="Password..." ></p>
+        <input class="btn btn-success" type="submit" value="Login">
+    </form>
+</div>
+{% endblock %}

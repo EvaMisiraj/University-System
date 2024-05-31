@@ -1,0 +1,346 @@
+{% extends 'app/Links.html' %}
+{% load static%}
+{% block content %}
+
+<style>
+    #one
+    {
+        background-color: #b4c4ba;
+    }
+
+#headers
+{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.row
+{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#two
+{
+    background-color: #b4c4ba;
+}
+
+#secondprof
+{
+    margin-left: 30%;
+}
+
+#three
+{
+    background-color: #b4c4ba;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-top: 20px;
+}
+
+#seemore
+{
+    margin-top: 30px;
+}
+
+#card2
+{
+    box-shadow: 0 14px 18px 0 rgba(5, 5, 5, 0.2);
+    transition: 0.3s;
+}
+
+#card2:hover
+{
+    box-shadow: 0 18px 16px 0 #58695e;;
+}
+
+footer
+{
+    background: #70a183;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 25px;
+}
+</style>
+
+<body>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" alt="..." style="height: 650px;" src="{% static 'photos/campus.jpg' %}"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Campus</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" alt="..." style="height: 650px;" src="{% static 'photos/green.jpg' %}"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Green Spaces</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" alt="..." style="height: 650px;" src="{% static 'photos/lab.jpg' %}"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Laboratory</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" alt="..." style="height: 650px;" src="{% static 'photos/canteen.jpg' %}"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Canteen</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" alt="..." style="height: 650px;" src="{% static 'photos/sports.jpg' %}"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Sports</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+        <div id="one">
+            <h1 id="headers">Latest News</h1>
+            <hr width="20%" style="position: absolute">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" alt="..." height="200px" src="{% static 'photos/ceremony.jpg' %}"/>
+                    <div class="card-body">
+                    <h5 class="card-title">Graduation Ceremony</h5>
+                    <p class="card-text">Albanian University successfully organized the graduation ceremony for the class of 2022.</p>
+                    <a href="https://epoka.edu.al/slider/" class="btn btn-primary">See more</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" alt="..." height="200px" src="{% static 'photos/scholarship.jpg' %}"/>
+                    <div class="card-body">
+                    <h5 class="card-title">Scholarships</h5>
+                    <p class="card-text">Albanian University awarded scholarships to Ukranians citizens for the year of 2022-2023.</p>
+                    <a href="https://www.scholarshipdesk.com/epoka-university-scholarship-in-albania/#:~:text=EPOKA%20University%20in%20Albania%20is%20offering%20a%20number,scholarships%20cover%2050%25%20Tuition%20fee50%25%20Tuition%20fee.%20" class="btn btn-primary">See more</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" alt="..." height="200px" src="{% static 'photos/accredited.jpg' %}"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Accreditation</h5>
+                        <p class="card-text">Albanian University has accredited all of his courses for the academic year of 2021-2022.</p>
+                        <a href="https://baf.epoka.edu.al/news-epoka-university-bachelor-program-in-banking-and-finance-receives-international-accreditation-by-german-accreditor-evalag-5171.html" class="btn btn-primary">See more</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" alt="..." height="200px" src="{% static 'photos/career.jpg' %}"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Career Fair</h5>
+                        <p class="card-text">Albanian University organized the career fair for this year with a high participation.</p>
+                        <a href="https://cpao.epoka.edu.al/event-7th-career-fair-apply-now-5305.html" class="btn btn-primary">See more</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="two">
+            <h1 id="headers">University's Staff</h1>
+            <hr width="30%" style="position: absolute">
+            <div class="card mb-3" style="max-width: 70%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start" alt="..." width="250px" src="{% static 'photos/p1.jfif' %}"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                        <h5 class="card-title">Madeleine Albright</h5>
+                        <p class="card-text">Madeleine Albright was the first woman ever to hold the post of U.S. Secretary of State from 1997-2001. Before this stint, in 1982, she joined the faculty of Georgetown University as a research professor of international affairs and director of women students enrolled in the foreign service program at the university’s School of Foreign Service. On May 13, 2007, two days before her 70th birthday, Albright received an honorary doctor of laws degree from the University of North Carolina at Chapel Hill.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 7/18/2022</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="two">
+            <div class="card mb-3" id="secondprof" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Angelou Maya</h5>
+                            <p class="card-text">Angelou is an American autobiographer and poet who has been called “America’s most visible black female autobiographer.” Angelou has been highly honored for her body of work, including being awarded over 30 honorary degrees and the nomination of a Pulitzer Prize for her 1971 volume of poetry, Just Give Me a Cool Drink of Water ‘Fore I Diiie. Since 1991, Angelou has taught at Wake Forest University as recipient of the first lifetime Reynolds Professorship of American Studies, and since the 1990s she has made around eighty appearances a year on the lecture circuit. The Maya Angelou Center for Health Equity at Wake Forest University School of Medicine is addressing one of the most compelling demographic trends in modern American history — the increasing diversity of the U.S. population.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 7/18/2022</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start" alt="..." width="300px" height="300px" src="{% static 'photos/p2.jpg' %}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="two">
+            <div class="card mb-3" style="max-width: 70%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start" alt="..." width="300px" height="300px" src="{% static 'photos/p3.jpg' %}"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                        <h5 class="card-title">William Charles Ayers</h5>
+                        <p class="card-text">William Charles Ayers became even more famous than usual when a controversy arose over his contacts with candidate Barack Obama during the 2009 presidential campaign. Ayers is known for his current work in education reform, curriculum, and instruction. However, he was involved with the development of the Weather Underground in the 1960s, and this involvement has come back to haunt him. Ayers earned an M.Ed from Bank Street College, an M.Ed from Teachers College, Columbia University and an Ed. D from Teachers College, Columbia University.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 7/18/2022</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="two">
+            <div class="card mb-3" id="secondprof" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Aznar, Jose Maria</h5>
+                            <p class="card-text">Aznar served as the Prime Minister of Spain from 1996 to 2004. Born in Madrid in 1953, Aznar studied law at the Complutense University of Madrid, and by 1990 he was confirmed as leader of the People’s Party. On 19 April 1995, Aznar’s armored car prevented him from being assassinated by an ETA bomb. In his Georgetown position, he teaches two seminars per semester on contemporary European politics and trans-Atlantic relationships in the Edmund A. Walsh School of Foreign Service. Additionally, he teaches a course on political leadership, convened by Professor Carol Lancaster, with former Polish President Kwasniewski.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 7/18/2022</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start" alt="..." width="300px" src="{% static 'photos/p4.jfif' %}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="two">
+            <div class="card mb-3" style="max-width: 70%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid rounded-start" alt="..." width="350px" src="{% static 'photos/p5' %}"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                        <h5 class="card-title">Carter, Jimmy</h5>
+                        <p class="card-text">After serving as the thirty-ninth president of the United States, James Earl Carter, Jr. became University Distinguished Professor at Emory University in Atlanta, Georgia, and founded The Carter Center. The Carter Center fellows, associates, and staff join with President Carter in efforts to resolve conflict, promote democracy, protect human rights, and prevent disease and other afflictions. On December 10, 2002, the Norwegian Nobel Committee awarded the Nobel Peace Prize to Mr. Carter “for his decades of untiring effort to find peaceful solutions to international conflicts…”</p>
+                        <p class="card-text"><small class="text-muted">Last updated 7/18/2022</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div id="three">
+            <h1 id="headers">Explore Degrees</h1>
+            <hr width="25%" style="position: absolute">
+            <h5 id="headers">Explore degrees and prepare for your future...</h5>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" id="card2" style="width: 15rem;">
+                        <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/ceng.jfif' %}"/>
+                        <div class="card-body">
+                            <a href="https://ce.epoka.edu.al/home-bachelor-192-193.html?lang=EN&dpid=2&t=bachelor&catid=192&menuid=193" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Civil Engineering</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" id="card2" style="width: 15rem;">
+                        <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/comp.jfif' %}"/>
+                        <div class="card-body">
+                            <a href="https://eis.epoka.edu.al/curricula/2/program" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Computer Engineering</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" id="card2" style="width: 15rem;">
+                        <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/architecture.jfif' %}"/>
+                        <div class="card-body">
+                            <a href="https://drive.google.com/file/d/1-eCYcp_OBM9RXcILwYbrFAy2K1EB7z81/view" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Architecture</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card" id="card2" style="width: 15rem;">
+                        <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/electronic.jfif' %}"/>
+                        <div class="card-body">
+                            <a href="https://eis.epoka.edu.al/curricula/3/program" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Electronics</h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <center><a href="#demo" id="seemore" class="btn btn-primary" data-bs-toggle="collapse">See more</a></center>
+                <div id="demo" class="collapse">
+                    <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card" id="card2" style="width: 15rem;">
+                            <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/economics.jpg' %}"/>
+                            <div class="card-body">
+                                <a href="https://eco.epoka.edu.al/home-bachelor-in-economics-253-1223.html" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Economics</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card" id="card2" style="width: 15rem;">
+                            <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/busadm.jpg' %}"/>
+                            <div class="card-body">
+                                <a href="https://bus.epoka.edu.al/home-business-administration-261-272.html" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Business Administration</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card" id="card2" style="width: 15rem;">
+                            <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/binf.png' %}"/>
+                            <div class="card-body">
+                                <a href="https://bus.epoka.edu.al/home-business-informatics-261-273.html" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Business Informatics</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card" id="card2" style="width: 15rem;">
+                            <img class="card-img-top" alt="..." height="100px" src="{% static 'photos/baf.jpg' %}"/>
+                            <div class="card-body">
+                                <a href="https://baf.epoka.edu.al/home-banking-and-finance-1761-1975.html" style="text-decoration: none;"><h5 class="card-title" style="color: black;">Banking and Finance</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        
+          <footer>
+                <center><p class="rights-text">© 2022 Created By <b>Suela Luzi</b>  All Rights Reserved.</p></center>
+          </footer>
+
+
+        
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,106 @@
+{% extends 'app/Links.html' %}
+{% load static%}
+{% block content %}
+<style>
+    body{
+        background-image: url("{% static 'photos/protocol.webp' %}");
+    }
+
+    .container{
+        opacity: 95%;
+    }
+</style>
+
+<div class="container ">
+
+    <br><br>
+    <div class="row">
+    <div class="col-md-9">
+        <h5>Notice:</h5>
+        <div class="card card-body">
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Notice</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+            {% for n in notice %}
+            <tr>
+                <td>{{n.Message}} </td>
+                <td>{{n.date_created}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="row">
+	<div class="col-md-9">
+		<h5>Attendance:</h5>
+		
+		<div class="card card-body">
+        <table class="table table-hover">
+        <thead>
+				<tr>
+					<th>Student Id</th>
+                    <th>Course Name</th>
+					<th>Attended Lectures</th>                    
+					<th>Total Lectures</th>
+				</tr>
+        </thead>
+                {% for a in attendance %}
+		        <tr>
+                    <td>{{a.StudentId}} </td>
+                    <td>{{a.CourseName}} </td>
+					<td>{{a.LecturesAttended}} </td>
+					<td> {{a.TotalLectures}} </td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<br><br>
+
+<div class="row">
+	<div class="col-md-9">
+		<h5>Marks:</h5>
+		
+		<div class="card card-body">
+        <table class="table table-hover">
+        <thead>
+				<tr>
+					<th>Student Id</th>
+					<th>Homework Marks</th>
+                    <th>Project Marks</th>
+                    <th>Quizz Marks</th>
+                    <th>Midterm Marks</th>
+                    <th>Final Marks</th>
+				</tr>
+        </thead>
+                {% for m in marks %}
+		        <tr>
+                    <td>{{m.StudentId}} </td>
+					<td>{{m.HomeworkMarks}} </td>
+					<td>{{m.ProjectMarks}} </td>
+					<td>{{m.QuizzMarks}} </td>
+					<td>{{m.MidtermMarks}} </td>
+					<td>{{m.FinalMarks}} </td>
+				</tr>
+				{% endfor %}
+			</table>
+            <p> <b>Note:</b> Marks are out of 100</p>
+		</div>
+	</div>
+</div>
+</div>
+
+
+{% endblock %}
+ 

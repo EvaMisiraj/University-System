@@ -1,0 +1,39 @@
+{% extends 'app/Links.html' %}
+{% load static%}
+{% block content %}
+<style>
+    body{
+        background-image: url("{% static 'photos/attendance.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container{
+        opacity: 95%;
+        margin-left: 550px;
+        margin-top: 80px;
+        width: initial;
+    }
+
+    h1{
+        color: white;
+    }
+</style>
+
+<div class="jumbotron container row">
+    <div class="col-md-6">
+        
+    <h1>Add Attendance</h1>
+        <div class="card card-body">
+           <form action="" method="POST">
+              {% csrf_token %}
+                {{form.as_p}}
+                <br>
+             <input type="submit" name="Submit">
+             </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
